@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass --include-path styles/src/ styles/src/main.scss styles/main.css",
+    "build-css": "node-sass --include-path styles/src/ styles/src/main.scss styles/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "serve": "lite-server",
-    "start": "npm run sass && npm run serve"
+    "start": "npm run watch-css && npm run serve"
   },
   "repository":{
     "type": "git",
@@ -18,7 +19,9 @@
     "url": "htps://github.com/tomiik/country_compare/issues"
   },
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.10.1",
+    "nodemon": "1.11.0"
   },
   "homepage": "https://github.com/tomiik/country_compare#readme"
 }

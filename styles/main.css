@@ -1,2 +1,11 @@
-body {
-  color: #fff; }
+body h2 a.btn-floating {
+  font-size: 1rem; }
+
+.country .card .card-title {
+  font-weight: 600; }
+
+.country .card p {
+  font-size: 4rem;
+  font-weight: 100; }
+  .country .card p span.units {
+    font-size: 3rem; }
